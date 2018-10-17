@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
+</head>
+<title>COLORgo.</title>
+<style>
+*{
+	padding: 0px;
+	margin: 0px;
+}
+	body{
+		background-color: grey;
+		font-family: 'Aclonica'; font-size: 15px;
+	}
+	#box{
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		background-color: white;
+		left: 640px;
+    border-radius: 50px;
+		border: 2px solid black;
+		top: 310px;
+		padding: 25px;
+		font-size: 65px;
+		text-align: center;
+		margin: 20px auto;
+    border: 2px solid blue;
+	}
+	#boxa{
+		width: 300px;
+		height: 60px;
+		background-color: rgba(0,0,0,0.7);
+		position: absolute;
+		left: 40px;
+		top: 95px;
+		text-align: center;
+		padding-top: 0px;
+
+
+	}
+	#boxb{
+		width: 300px;
+		height: 60px;
+		background-color: (0,0,0,0.7);
+		position: absolute;
+		right: 50px;
+		top: 95px;
+		text-align: center;
+	
+	}
+	#boxc{
+		width: 500px;
+		height: 20px;
+		background-color: blue;
+		position: absolute;
+		top: 160px;
+		right:405px;
+		text-align: center;
+		padding-top: 45px;
+		border-radius:10px;
+	}
+	#boxd{
+		width:120px;
+		height: 120px;
+		background-color: white;
+		position: absolute;
+		top: 250px;
+		left: 370px;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 0px;
+		border-radius:65px;
+		border: 2px solid white;
+	}
+  #boxd:hover{
+    border: 2px solid black;
+  }
+	#boxe{
+		width: 120px;
+		height: 120px;
+		background-color: red;
+		position: absolute;
+		top: 380px;
+		left: 980px;
+		text-align: center;
+		padding-top: 15px;
+		border-radius:65px;
+		border: 2px solid white;
+	}
+  #boxe:hover{
+     border: 2px solid black;
+  }
+	#boxf{
+		width: 120px;
+		height: 120px;
+		background-color: yellow;
+		position: absolute;
+		top: 530px;
+		text-align: center;
+		padding-top: 15px;
+		border-radius:65px;
+		left: 680px;
+		border: 2px solid white;
+        }
+        #boxf:hover{
+           border: 2px solid black;
+        }
+        #boxg{
+        	width: 120px;
+        	height: 120px;
+        	background-color: brown;
+        	position: absolute;
+        	top: 530px;
+        	left: 530px;
+        	text-align: center;
+        	padding-top: 15px;
+        	border-radius:65px;
+        	border: 2px solid white;
+        }
+        #boxg:hover{
+           border: 2px solid black;
+        }
+        #boxh{
+        	width: 120px;
+        	height: 120px;
+        	background-color: green;
+        	position: absolute;
+        	top: 525px;
+        	left: 370px;
+        	text-align: center;
+        	padding-top: 15px;
+        	border-radius:65px;
+        	border: 2px solid white;
+        }
+        #boxh:hover{
+           border: 2px solid black;
+        }
+        #boxi{
+        	width: 120px;
+        	height: 120px;
+        	background-color: purple;
+        	position: absolute;
+        	top: 530px;
+        	left:980px;
+        	text-align: center;
+        	padding-top: 15px;
+        	border-radius:65px;
+        	border: 2px solid white;
+        }
+        #boxi:hover{
+           border: 2px solid black;
+        }
+        #boxj{
+        	width: 120px;
+        	height: 120px;
+        	background-color: pink;
+        	position: absolute;
+        	top: 250px;
+        	text-align: center;
+        	padding-top: 15px;
+        	border-radius:65px;
+        	left: 980px;
+        	border: 2px solid white;
+        }
+        #boxj:hover{
+           border: 2px solid black;
+        }
+        #boxk{
+        	width: 120px;
+        	height: 120px;
+        	background-color: darkorange;
+        	position: absolute;
+        	top: 385px;
+        	left:370px;
+        	text-align: center;
+        	padding-top: 15px;
+        	border-radius:65px;
+        	border: 2px solid white;
+        }
+        #boxk:hover{
+           border: 2px solid black;
+        }
+        #boxl{
+        	width: 120px;
+        	height: 120px;
+        	background-color: blue;
+        	position: absolute;
+        	top: 530px;
+        	left: 830px;
+        	text-align: center;
+        	padding-top: 15px;
+        	border-radius:65px;
+        	border: 2px solid white;
+        }
+        #boxl:hover{
+           border: 2px solid black;
+        }
+        #boxlast{
+        	width: 200px;
+        	height: 200px;
+        	position: absolute;
+        	top:350px;
+        	left: 30px;
+        	background-color: pink;
+        	text-align: center;
+          border-radius: 40px;
+        	border: 2px solid black;
+
+
+        }
+</style>
+</head>
+<body>
+	<h1 style="color: white; padding: 0px; margin-top: 15px margin-bottom: 25px; "><center>COLOR GAME</center></h1>
+ <div id="box"><h1 id="lol"></h1></div>
+	<div style="background-color: #555; width:1350px; height: 200px;">
+   <div id="boxa" onclick="myfunctiona()"><h1><center>START
+   </center></h1></div>
+   <div id="boxb" align="center" style="font-size: 30px;">
+   	<center>20</center></h1></div>
+   	<div id="boxc" align="center"><br><h1></h1></div>
+   	<button id="boxlast" onclick="functiontwo()">GIVE ME A NEW COLOR!</button>
+   	<button id="boxd" onclick="comparea(), functiontwo()"></button>
+   	
+   <button id="boxe" onclick="compareb(), functiontwo()"></button>
+  <button id="boxf" onclick="comparec(),  functiontwo()"></button>
+  <button id="boxg" onclick="compared(),  functiontwo()"></button>
+  <button id="boxh" onclick="comparef(),  functiontwo()"></button>
+  <button id="boxi" onclick="compareg(),  functiontwo()"></button>
+  <button id="boxj" onclick="compareh(),  functiontwo()"></button>
+  <button id="boxk" onclick="comparei(),   functiontwo()"></button>
+  <button id="boxl" onclick="comparej(),  functiontwo()"></button>
+   <script>
+   	var counter=0;
+   	
+   	function myfunctiona(){
+
+      document.getElementById('boxd').disabled=false;
+      document.getElementById('boxe').disabled=false;
+      document.getElementById('boxf').disabled=false;
+      document.getElementById('boxg').disabled=false;
+      document.getElementById('boxh').disabled=false;
+      document.getElementById('boxi').disabled=false;
+      document.getElementById('boxj').disabled=false;
+      document.getElementById('boxk').disabled=false;
+      document.getElementById('boxl').disabled=false;
+          var timeleft= 20;
+      var CountDownTimer= setInterval(function(){
+        timeleft--;
+        document.getElementById('boxb').textContent=timeleft;
+        if(timeleft <=0)
+        {
+          clearInterval(CountDownTimer);
+        document.getElementById('boxa').innerHTML="<br><center>TIME OVER!</center></h1>"
+        document.getElementById('boxa').style.background="red";
+        alert("Time's up! your final Rang Barse score is:" +counter );
+          document.getElementById('boxc').innerHTML=" CLICK ON 'TIME OVER' TO TRY AGAIN.</h1>"
+          document.getElementById('box').innerHTML=0;
+          document.getElementById('boxd').disabled=true;
+          document.getElementById('boxe').disabled=true;
+          document.getElementById('boxf').disabled=true;
+          document.getElementById('boxg').disabled=true;
+          document.getElementById('boxh').disabled=true;
+          document.getElementById('boxi').disabled=true;
+          document.getElementById('boxj').disabled=true;
+          document.getElementById('boxk').disabled=true;
+          document.getElementById('boxl').disabled=true;
+          return counter=0;
+         }
+           },1000);
+   		
+   		 var colora=["PINK</h1>","GREEN</h1>","YELLOW</h1>","RED</h1>","WHITE</h1>","BLUE</h1>","PURPLE</h1>","ORANGE</h1>","BROWN</h1>"];
+   		
+   		 var p= colora[Math.floor(Math.random()*colora.length)];
+   		 var q= colora[Math.floor(Math.random()*colora.length)];
+   		 var r= colora[Math.floor(Math.random()*colora.length)];
+   		 var s=colora[Math.floor(Math.random()*colora.length)];
+   		 var t=colora[Math.floor(Math.random()*colora.length)];
+   		 var u=colora[Math.floor(Math.random()*colora.length)];
+   		 var v=colora[Math.floor(Math.random()*colora.length)];
+   		 var w=colora[Math.floor(Math.random()*colora.length)];
+   		 var x=colora[Math.floor(Math.random()*colora.length)];
+   		 var y=colora[Math.floor(Math.random()*colora.length)];
+   		 var list=[q,r,s,t,u,v,w,x,y];
+   		 var fixed= Math.floor(Math.random()*list.length);
+   		 list[fixed]=p;
+        document.getElementById('boxa').innerHTML="<h1><center>STARTED!</center></h1>"
+      document.getElementById('boxa').style.background="green";
+      document.getElementById('boxb').style.background="green";
+      document.getElementById('boxc').innerHTML=p;
+      document.getElementById('boxd').innerHTML=list[0];
+      document.getElementById('boxe').innerHTML=list[1];
+      document.getElementById('boxf').innerHTML=list[2];
+      document.getElementById('boxg').innerHTML=list[3];
+      document.getElementById('boxh').innerHTML=list[4];
+      document.getElementById('boxi').innerHTML=list[5];
+      document.getElementById('boxj').innerHTML=list[6];
+      document.getElementById('boxk').innerHTML=list[7];
+      document.getElementById('boxl').innerHTML=list[8];
+   		 
+        var cola='#'; 
+        var colob='#';
+        var coloc='#';
+        var colordd='#';
+        var coloree='#';
+        var colorff='#';
+        var colorf='#';
+        var colorgg='#';
+        var colorhh='#';
+        var colorii='#';
+        var lettera=['FFFF00','FFFFFF','FF0000','0000FF','FFC0CB','EE82EE','8b4513','FF8C00','00ff00']; //yellow,white,red,blue,pink,violet,brown,orange,green.
+        var letterb=['FFFFFF','FF0000','FFFF00','0000FF','FFC0CB','EE82EE','8b4513','FF8C00','00ff00'];
+        var letterc=['FF0000','FFFFFF','FFFF00','0000FF','FFC0CB','EE82EE','8b4513','FF8C00','00ff00'];
+        coloa += lettera[Math.floor(Math.random()*lettera.length)];
+        colob += letterb[Math.floor(Math.random()*letterb.length)];
+        coloc += letterc[Math.floor(Math.random()*letterc.length)];
+        document.getElementById('boxd').style.background=cola;
+        document.getElementById('boxe').style.background=colob;
+        document.getElementById('boxf').style.background=coloc;
+
+      
+   	}
+
+   		function functiontwo(){
+      var colora=["PINK</h1>","GREEN</h1>","YELLOW</h1>","RED</h1>","WHITE</h1>","BLUE</h1>","PURPLE</h1>","ORANGE</h1>","BROWN</h1>"];
+   		var p= colora[Math.floor(Math.random()*colora.length)];
+   		 var q= colora[Math.floor(Math.random()*colora.length)];
+   		 var r= colora[Math.floor(Math.random()*colora.length)];
+   		 var s=colora[Math.floor(Math.random()*colora.length)];
+   		 var t=colora[Math.floor(Math.random()*colora.length)];
+   		 var u=colora[Math.floor(Math.random()*colora.length)];
+   		 var v=colora[Math.floor(Math.random()*colora.length)];
+   		 var w=colora[Math.floor(Math.random()*colora.length)];
+   		 var x=colora[Math.floor(Math.random()*colora.length)];
+   		 var y=colora[Math.floor(Math.random()*colora.length)];
+   		  var list=[q,r,s,t,u,v,w,x,y];
+   		 var fixed= Math.floor(Math.random()*list.length);
+   		 list[fixed]=p;
+          document.getElementById('boxc').innerHTML=p;
+      document.getElementById('boxd').innerHTML=list[0];
+      document.getElementById('boxe').innerHTML=list[1];
+      document.getElementById('boxf').innerHTML=list[2];
+      document.getElementById('boxg').innerHTML=list[3];
+      document.getElementById('boxh').innerHTML=list[4];
+      document.getElementById('boxi').innerHTML=list[5];
+      document.getElementById('boxj').innerHTML=list[6];
+      document.getElementById('boxk').innerHTML=list[7];
+      document.getElementById('boxl').innerHTML=list[8];
+        var coloraa='#'; 
+        var colorbb='#';
+        var colorcc='#';
+        var colordd='#';
+        var coloree='#';
+        var colorff='#';
+        var colorf='#';
+        var colorgg='#';
+        var colorhh='#';
+        var colorii='#';
+        var lettera=['FFFF00','FFFFFF','FF0000','0000FF','FFC0CB','EE82EE','8b4513','FF8C00','00ff00']; //yellow,white,red,blue,pink,violet,brown,orange,green.
+        var letterb=['FFFFFF','FF0000','FFFF00','0000FF','FFC0CB','EE82EE','8b4513','FF8C00','00ff00'];
+        var letterc=['FF0000','FFFFFF','FFFF00','0000FF','FFC0CB','EE82EE','8b4513','FF8C00','00ff00'];
+        coloraa+= lettera[Math.floor(Math.random()*lettera.length)];
+        colorbb += letterb[Math.floor(Math.random()*letterb.length)];
+        colorcc += letterc[Math.floor(Math.random()*letterc.length)];
+        document.getElementById('boxd').style.background=coloraa;
+        document.getElementById('boxe').style.background=colorbb;
+        document.getElementById('boxf').style.background=colorcc;
+      }
+   
+      
+        function comparea(){
+     	 var m=document.getElementById('boxc').innerHTML;
+     	 var n=document.getElementById('boxd').innerHTML;
+     	 if(m==n)
+     	     {
+     		 ++counter;
+     	 document.getElementById('box').innerHTML=counter;
+     	 return counter;
+     	     }
+     	 }
+         function compareb(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n= document.getElementById('boxe').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     	}
+     	function comparec(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxf').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     	}
+      function compared(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxg').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     	 }
+     	
+     	function comparef(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxh').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     	 }
+     	function compareg(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxi').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     }
+     	
+     	function compareh(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxj').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     	 }
+     	
+     	function comparei(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxk').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+        }
+   }
+   	    function comparej(){
+     		var m=document.getElementById('boxc').innerHTML;
+     		var n=document.getElementById('boxl').innerHTML;
+     		if(m==n){
+     			++counter;
+     			document.getElementById('box').innerHTML=counter;
+     			return counter;
+     		}
+     }
+     function functionthree(){
+      alert("START NEW GAME!");
+     }
+      </script>
+  </body>
+</html>
